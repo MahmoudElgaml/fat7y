@@ -1,3 +1,29 @@
 class Assets{
-  
+  static const String appLogo = 'assets/images/logo.png';
+  static const String splashBackground = 'assets/images/splash_background.png';
+  static const String loginBackground = 'assets/images/login_background.png';
+  static const String homeBackground = 'assets/images/home_background.png';
+  static const String profilePlaceholder = 'assets/images/profile_placeholder.png';
+  static const String homeIcon = 'assets/images/home.svg';
+  static const String expectsIcon = 'assets/images/expects.svg';
+  static const String achievementIcon = 'assets/images/achievement.svg';
+  static const String myAccountIcon = 'assets/images/my_account.svg';
+  static const String ordersIcon = 'assets/images/orders.svg';
+  static const String searchIcon = 'assets/images/Search-1.png';
+  static const String ringtoneIcon = 'assets/images/Ringtone 2.png';
+  static const String rewards = 'assets/images/rewards.png';
+  static const String vote = 'assets/images/vote.png';
+  static const String wallet = 'assets/images/wallet.png';
+  static const String hzb = 'assets/images/hzb.png';
+  static const String backgroundOfVote = 'assets/images/backgroundOfVote.png';
+  static const String elmalky = 'assets/images/elmalky.png';
+  static const String elsoudany = 'assets/images/elsoudany.png';
+  static const String backgroundOfWallet = 'assets/images/backgroundOfWallet.png';
+  static const String arrowLeft = 'assets/images/arrowLeft.png';
+  static const String backgroundOfCash = 'assets/images/backgroundOfCash.png';
+  static const String star = 'assets/images/Star.png';
+  static const String star2 = 'assets/images/Star 2.png';
+  static const String starGift = 'assets/images/Star Gift.png';
+  static const String support = 'assets/images/support.png';
+  static const String backgroundOfexpect = 'assets/images/backgroundOfexpect.png';
 }
