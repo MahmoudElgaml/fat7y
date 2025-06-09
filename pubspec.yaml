@@ -92,6 +92,14 @@ flutter:
   assets:
     - assets/images/
 
+  fonts:
+    - family: Zuhal
+      fonts:
+        - asset: assets/Zuhal-Regular.ttf
+
+
+
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
 

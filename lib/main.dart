@@ -17,6 +17,9 @@ class MyApp extends StatelessWidget {
       supportedLocales: const [
         Locale('ar'), // تدعم العربية فقط حالياً
       ],
+      theme: ThemeData(
+        fontFamily: 'Zuhal',
+      ),
       localizationsDelegates: const [
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
