@@ -1,7 +1,7 @@
 import 'package:fat7y/config/routes/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-
+import 'package:google_fonts/google_fonts.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -13,12 +13,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      locale: const Locale('ar'), // اللغة الافتراضية
+      locale: const Locale('ar'),
       supportedLocales: const [
-        Locale('ar'), // تدعم العربية فقط حالياً
+        Locale('ar'),
       ],
       theme: ThemeData(
-        fontFamily: 'Zuhal',
+        textTheme: GoogleFonts.tajawalTextTheme(),
       ),
       localizationsDelegates: const [
         GlobalMaterialLocalizations.delegate,

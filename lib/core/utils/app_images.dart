@@ -25,5 +25,5 @@ class Assets{
   static const String star2 = 'assets/images/Star 2.png';
   static const String starGift = 'assets/images/Star Gift.png';
   static const String support = 'assets/images/support.png';
-  static const String backgroundOfexpect = 'assets/images/backgroundOfexpect.png';
+  static const String backgroundOfexpect = 'assets/images/background.png';
 }

@@ -79,134 +79,135 @@ class LastSection extends StatelessWidget {
         ),
         borderRadius: BorderRadius.circular(16),
       ),
-      child: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const SizedBox(
-              width: double.infinity,
-            ),
-            Align(
-              alignment: Alignment.topCenter,
-              child: Container(
-                height: 36,
-                width: 140,
-                decoration: const BoxDecoration(
-                  color: Color(0xFF3E73F3),
-                  borderRadius: BorderRadius.only(
-                      bottomLeft: Radius.circular(16),
-                      bottomRight: Radius.circular(16)),
-                ),
-                child: const Center(
-                  child: Text(
-                    "ينتهي : 11:08:21",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 12,
-                      fontWeight: FontWeight.w700,
-                    ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const SizedBox(
+            width: double.infinity,
+          ),
+          Align(
+            alignment: Alignment.topCenter,
+            child: Container(
+              height: 36,
+              width: 140,
+              decoration: const BoxDecoration(
+                color: Color(0xFF3E73F3),
+                borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(16),
+                    bottomRight: Radius.circular(16)),
+              ),
+              child: const Center(
+                child: Text(
+                  "ينتهي : 11:08:21",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 12,
+                    fontWeight: FontWeight.w700,
                   ),
                 ),
               ),
             ),
-            Row(
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                Row(
                   children: [
-                    Text("توقع نتيجة التالي:",
-                        style: TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.w700,
-                          color: AppColor.whiteColor,
-                        )),
-                    FittedBox(
-                      alignment: Alignment.centerRight,
-                      child: Text("""من تتوقع أن يحصل على أكبر عدد من
-    المقاعد  الانتخابات القادمة؟""",
-                          style: TextStyle(
-                            fontSize: 14,
-                            fontWeight: FontWeight.w500,
-                            color: AppColor.whiteColor,
-                          )),
+                    const Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text("توقع نتيجة التالي:",
+                            style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.w700,
+                              color: AppColor.whiteColor,
+                            )),
+                        FittedBox(
+                          alignment: Alignment.centerRight,
+                          child: Text("""من تتوقع أن يحصل على أكبر عدد من
+المقاعد  الانتخابات القادمة؟""",
+                              style: TextStyle(
+                                fontSize: 14,
+                                fontWeight: FontWeight.w500,
+                                color: AppColor.whiteColor,
+                              )),
+                        ),
+                      ],
+                    ),
+                    const Spacer(),
+                    Image.asset(Assets.vote, height: 100, width: 100),
+                  ],
+                ),
+                Stack(
+                  children: [
+                    const Padding(
+                      padding: EdgeInsets.only(right: 0),
+                      child: CircleAvatar(
+                        radius: 20,
+                        backgroundImage: AssetImage('assets/images/1.png'),
+                      ),
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.only(right: 25),
+                      child: CircleAvatar(
+                        radius: 20,
+                        backgroundImage: AssetImage('assets/images/2.png'),
+                      ),
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.only(right: 50),
+                      child: CircleAvatar(
+                        radius: 20,
+                        backgroundImage: AssetImage('assets/images/3.png'),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 75),
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 12, vertical: 6),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(30),
+                        ),
+                        child: const Text(
+                          '80+ مشارك',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ),
                     ),
                   ],
                 ),
-                const Spacer(),
-                Image.asset(Assets.vote, height: 100, width: 100),
-              ],
-            ),
-            Stack(
-              children: [
-                const Padding(
-                  padding: EdgeInsets.only(right: 0),
-                  child: CircleAvatar(
-                    radius: 20,
-                    backgroundImage:
-                        AssetImage('assets/images/1.png'),
-                  ),
-                ),
-                const Padding(
-                  padding: EdgeInsets.only(right: 25),
-                  child: CircleAvatar(
-                    radius: 20,
-                    backgroundImage:
-                        AssetImage('assets/images/2.png'),
-                  ),
-                ),
-                const Padding(
-                  padding: EdgeInsets.only(right: 50),
-                  child: CircleAvatar(
-                    radius: 20,
-                    backgroundImage:
-                        AssetImage('assets/images/3.png'),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(right: 75),
-                  child: Container(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 12, vertical: 6),
+                Container(
+                    height: 40,
+                    width: double.infinity,
+                    margin: const EdgeInsets.only(top: 8),
                     decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(30),
+                      color: AppColor.whiteColor,
+                      borderRadius: const BorderRadius.only(
+                          bottomRight: Radius.circular(12),
+                          bottomLeft: Radius.circular(12),
+                          topRight: Radius.circular(4),
+                          topLeft: Radius.circular(4)),
+                      border:
+                          Border.all(color: const Color(0xffEFEFEF), width: 2),
                     ),
-                    child: const Text(
-                      '80+ مشارك',
-                      style:
-                          TextStyle(fontWeight: FontWeight.bold),
-                    ),
-                  ),
-                ),
+                    child: const Center(
+                      child: Text(
+                        'صوت الان',
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w600,
+                          color: Color(0xFF2853E7),
+                        ),
+                      ),
+                    )),
               ],
             ),
-            Container(
-                height: 40,
-                width: double.infinity,
-                margin: const EdgeInsets.only(top: 8),
-                decoration: BoxDecoration(
-                  color: AppColor.whiteColor,
-                  borderRadius: const BorderRadius.only(
-                      bottomRight: Radius.circular(12),
-                      bottomLeft: Radius.circular(12),
-                      topRight: Radius.circular(4),
-                      topLeft: Radius.circular(4)),
-                  border: Border.all(
-                      color: const Color(0xffEFEFEF), width: 2),
-                ),
-                child: const Center(
-                  child: Text(
-                    'صوت الان',
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w600,
-                      color: Color(0xFF2853E7),
-                    ),
-                  ),
-                ))
-          ],
-        ),
+          )
+        ],
       ),
     );
   }
